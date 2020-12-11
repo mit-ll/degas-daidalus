@@ -1,5 +1,5 @@
 # degas-daidalus
-This repository contains an interface between DEGAS and NASA's [DAIDALUS](https://github.com/nasa/daidalus/tree/v2.0.1). See the README in the SimulinkInterface directory for instructions on how to set up this interface.
+This repository contains an interface between DEGAS and NASA's [DAIDALUS](https://github.com/nasa/daidalus/tree/v2.0.1). See the [README](./SimulinkInterface/README.md) in the SimulinkInterface directory for instructions on how to set up this interface.
 
 ## Distribution Statement
 
