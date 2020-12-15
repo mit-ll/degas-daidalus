@@ -1,10 +1,10 @@
-MIT LL Simulink Interface for DAIDALUS
+### MIT LL Simulink Interface for DAIDALUS
 
 This folder contains the necessary software to create a [Matlab S-function](https://www.mathworks.com/help/simulink/sfg/what-is-an-s-function.html) for NASA's DAIDALUS v2.0.1c to interface with DEGAS.
 
-You can find the source code for NASA's DAIDALUS v2.0.1 on [Github](https://github.com/nasa/daidalus/tree/DAIDALUSv2.0.1c).
+To use DAIDALUS in DEGAS, you will need to first clone NASA's [DAIDALUS v2.0.1](https://github.com/nasa/daidalus/tree/DAIDALUSv2.0.1c) repository. After cloning, follow the "Building DAIDALUS" instructions approriate for your operating system.
 
-### Building DAIDALUS with Visual Studio 2015
+### Building DAIDALUS in Windows (with Visual Studio 2015)
 
 1. Open Visual Studio 2015, click file -> New Project
     * Select *Visual C++* from templates
@@ -27,9 +27,9 @@ You can find the source code for NASA's DAIDALUS v2.0.1 on [Github](https://gith
 
 5. Click *Build* and then select *Build Solution*
 
-6. The .lib file can be found in x64/Release 
+6. The .lib file can be found in x64/Release
 
-7. Move the .lib file to the directory pointed at by *make_daidalus_sfunc.m*, or ammend the path to the file
+7. Move the .lib file to the directory pointed at by *make_daidalus_sfunc.m*, or amend the path to the file
 
 ### Building DAIDALUS in Linux
 
@@ -37,19 +37,19 @@ You can find the source code for NASA's DAIDALUS v2.0.1 on [Github](https://gith
 
 2. Add -fPIC to the list of CXXFLAGS in the Makefile
 
-3. Run the command *make lib* to build the library 
+3. Run the command *make lib* to build the library
 
 4. The .a file can be found in C++/lib
 
-5. Move the .lib file to the directory pointed at by *make_daidalus_sfunc.m*, or ammend the path to the file
+5. Move the .a file to the directory pointed at by *make_daidalus_sfunc.m*, or amend the path to the file
 
 ### Creating the S-Function
 
-1. Run make_daidalus_sfunc.m to generate the mex file
+1. Run make_daidalus_sfunc.m to generate the mex file. If running in Windows, a .mexw64 file will be generated. If running in Linux, a .mexa64 file will be generated. 
 
 ### Using with DEGAS
 
-Before using DAIDALUS with DEGAS, ensure that the SimulinkInterface folder is on your Matlab path. 
+Before using DAIDALUS with DEGAS, ensure that the SimulinkInterface folder is on your Matlab path.
 Directions on how to do this can be found in the *Quick Start* section of the DEGAS README located in the DEGAS folder.
 
 ### DAIDALUS 1.0.1 vs. 2.0.1
@@ -61,7 +61,7 @@ DAIDALUS v2 added additional vertical speed/vertical speed band pairs. The Pilot
 DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.
 
 This material is based upon work supported by the National Aeronautics and Space Administration under Air Force Contract No. FA8702-15-D-0001. Any opinions, findings, conclusions or recommendations expressed in this material are those of the author(s) and do
- not necessarily reflect the views of the National Aeronautics and Space Administration .
+ not necessarily reflect the views of the National Aeronautics and Space Administration.
 
 © 2015 - 2020 Massachusetts Institute of Technology.
 
