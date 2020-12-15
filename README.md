@@ -1,6 +1,12 @@
 # degas-daidalus
 This repository contains an interface between DEGAS baseline simulation, [`degas-core`](https://github.com/mit-ll/degas-core), and NASA's [`DAIDALUS`](https://github.com/nasa/daidalus/tree/v2.0.1). See the [README](./SimulinkInterface/README.md) in the SimulinkInterface directory for instructions on how to set up this interface.
 
+## Citation
+
+Please use this DOI number reference when citing the software:
+
+[![DOI](https://zenodo.org/badge/320663255.svg)](https://zenodo.org/badge/latestdoi/320663255)
+
 ## Distribution Statement
 
 DISTRIBUTION STATEMENT A. Approved for public release. Distribution is unlimited.
