@@ -4,12 +4,14 @@ function make_daidalus_sfunc( )
 
 % Get path to DAIDALUS root directory
 path2Daidalus = input('Please enter the absolute path to DAIDALUS root directory: ', 's');
+path2Daidalus = strtrim(path2Daidalus); % Remove leading/trailing whitespaces
 if any(isspace(path2Daidalus))
     error('Path to DAIDALUS root directory cannot have whitespaces.');
 end
 
 % Get name of DAIDALUS library
 daidLibName = input('Please enter the name of the DAIDALUS library (Example: Daidalus2.a or daidalusv201c.lib): ', 's');
+daidLibName = strtrim(daidLibName); % Remove leading/trailing whitespaces
 if any(isspace(daidLibName))
     error('Name of the DAIDALUS library cannot have whitespaces.');
 end
