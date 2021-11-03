@@ -2,7 +2,7 @@
 
 This folder contains the necessary software to create a [Matlab S-function](https://www.mathworks.com/help/simulink/sfg/what-is-an-s-function.html) for NASA's DAIDALUS v2.0.1c to interface with DEGAS.
 
-To use DAIDALUS in DEGAS, you will need to first clone NASA's [DAIDALUS v2.0.1](https://github.com/nasa/daidalus/tree/DAIDALUSv2.0.1c) repository. Ensure that the path to the cloned repository does not contain any whitespaces. After cloning, follow the "Building DAIDALUS" instructions approriate for your operating system.
+To use DAIDALUS in DEGAS, you will need to first clone NASA's [DAIDALUS v2.0.1](https://github.com/nasa/daidalus/tree/DAIDALUSv2.0.1) repository. (Note that daidalus has since been updated but all test scripts have been built with DAIDALUS v2.0.1 (not v2.0.1c) so be sure to download the correct version for accuracy.) Ensure that the path to the cloned repository does not contain any whitespaces. After cloning, follow the "Building DAIDALUS" instructions approriate for your operating system.
 
 ### Building DAIDALUS in Windows (with Visual Studio 2015)
 
